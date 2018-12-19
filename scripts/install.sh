@@ -25,6 +25,7 @@ nixos-generate-config --root /mnt
 curl -f "$packer_http/vagrant.nix" > /mnt/etc/nixos/vagrant.nix
 curl -f "$packer_http/vagrant-hostname.nix" > /mnt/etc/nixos/vagrant-hostname.nix
 curl -f "$packer_http/vagrant-network.nix" > /mnt/etc/nixos/vagrant-network.nix
+curl -f "$packer_http/custom-configuration.nix" > /mnt/etc/nixos/custom-configuration.nix
 curl -f "$packer_http/configuration.nix" > /mnt/etc/nixos/configuration.nix
 
 ### Install ###

@@ -5,6 +5,7 @@
     [ # Include the results of the hardware scan.
       ./hardware-configuration.nix
       ./vagrant.nix
+      ./custom-configuration.nix
     ];
 
   # Use the GRUB 2 boot loader.
@@ -26,9 +27,6 @@
 
   # Replace nptd by timesyncd
   services.timesyncd.enable = true;
-
-  # Enable guest additions.
-  virtualisation.virtualbox.guest.enable = true;
 
   # Packages for Vagrant
   environment.systemPackages = with pkgs; [
